@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="spaz_emoji - wyszukiwarka i katalog emoji z zapisem Unicode i Pythona">
+    <meta name="author" content="Spazma">
+    <meta name="keywords" content="emoji, unicode, python, wyszukiwarka">
+    <meta property="og:title" content="spaz_emoji">
+    <meta property="og:description" content="Wyszukiwarka emoji z zapisem Unicode i Pythona / Desktop & Mobile">
+    <meta property="og:image" content="/favicon.ico">
+    
+    <title>spaz_emoji - Wyszukiwarka Emoji</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="favicon.ico" alt="logo" style="width:24px;height:24px;vertical-align:middle;margin-right:6px;">
+        <span>spaz</span>_emoji / v1.0
+    </div>
+    <div class="top-tools">
+        <button class="btn" onclick="exportFavorites()">Export ulubionych</button>
+        <button class="btn" onclick="importFavorites()">Import ulubionych</button>
+        <button class="btn" onclick="clearFavorites()" title="Wyczyść ulubione">🗑️</button>
+        <input type="file" id="importFile" style="display:none" onchange="handleImport(event)">
+    </div>
+</header>
+
+<main>
+
+    <!-- ================= LEFT COLUMN ================= -->
+    <div class="left-column">
+
+        <section class="panel">
+            <div class="panel-title">Wyszukiwarka emoji</div>
+            <input id="searchInput" class="input" placeholder="szukaj: uśmiech, smile, dog..." oninput="searchEmojis()">
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Ulubione (ostatnie 56)</div>
+            <div id="favorites"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Podgląd Pythona</div>
+            <div class="info-row" style="margin-bottom:6px;">
+                <div id="previewEmoji" class="preview-emoji">🙂</div>
+                <div id="pythonCode" class="code-box">Kliknij emoji, żeby zobaczyć zapis \UXXXXXXXX…</div>
+            </div>
+            <button class="btn btn-accent" onclick="copyPythonCode()">Kopiuj zapis Pythona</button>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Test zapisu Unicode / Python</div>
+            <div class="info-row">
+                <input id="unicodeInput" class="input" placeholder="np. U+1F61E lub \UXXXX…" oninput="updateUnicodePreview()">
+                <span id="unicodePreview" class="unicode-preview"></span>
+            </div>
+        </section>
+
+        <!-- ================= DEBUG PANEL ================= -->
+		<section class="panel debug-section">
+			<label class="debug-label">
+				<input type="checkbox" id="toggleDebug">
+				Pokaż debug
+			</label>
+
+			<div id="debugPanel" class="debug-panel">
+				<b>Debug:</b><br>
+				<div id="debugEmoji">Kliknij emoji…</div>
+				<div id="debugKeywords"></div>
+			</div>
+		</section>
+
+    </div> <!-- END LEFT COLUMN -->
+
+
+    <!-- ================= RIGHT COLUMN ================= -->
+    <div class="right-column">
+        <div class="tabs" id="tabs"></div>
+        <div class="grid-wrapper">
+            <div id="emojiGrid" class="emoji-grid"></div>
+        </div>
+    </div>
+
+</main>
+
+<footer id="footer">
+    <div class="footer-inner">
+        by <strong><a href="https://www.spazma.net" target="_blank">Spazma 2026</a></strong>
+		<span>update 18.05.06</strong></span>
+        <span>ilość emotek w bazie: <strong id="emojiCount">0</strong></span>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
