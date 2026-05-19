@@ -1,53 +1,63 @@
-🇵🇱 SPAZ-EMOJI
-Lekka przeglądarka emoji działająca online i offline.
+# 🇵🇱 SPAZ-EMOJI
+
+Lekka przeglądarka emoji działająca **online i offline**.  
 Czysty HTML/JS, bez backendu.
 
-🔗 Wersja online:  
+🔗 **Wersja online:**  
 https://spazma.github.io/emoji/
 
-📺 Funkcje
-Eksport / import ulubionych (JSON)
+---
 
-Wyszukiwarka po tagach
+## 📺 Funkcje
 
-Tester Unicode (kodowanie, sekwencje, renderowanie)
+- Eksport / import ulubionych (JSON)  
+- Wyszukiwarka po tagach  
+- Tester Unicode (kodowanie, sekwencje, renderowanie)  
+- Tryb mobilny (tylko kategorie + emoji)  
+- Sprawdzanie raz w miesiącu, czy jest nowa baza emotek (aktualizowana przeze mnie)
 
-Tryb mobilny (tylko kategorie + emoji)
+---
 
-Sprawdzanie raz w miesiącu, czy jest nowa baza emotek (aktualizowana przeze mnie)
+## 📚 Źródła danych
 
-📚 Źródła danych
-OpenMoji (CC BY-SA 4.0)
+- OpenMoji (CC BY-SA 4.0)  
+- Unicode CLDR annotations (Unicode License)
 
-Unicode CLDR annotations (Unicode License)
+---
 
-📝 Licencja
-Możesz używać projektu jak chcesz — w stopce lub README zostaw mój nick :)
+## 📝 Licencja
 
-------------------
+Możesz używać projektu jak chcesz — **w stopce lub README zostaw mój nick :)**
 
-🇬🇧 SPAZ-EMOJI
-A lightweight emoji browser that works online and offline.
+---
+
+# 🇬🇧 SPAZ-EMOJI
+
+A lightweight emoji browser that works **online and offline**.  
 Pure HTML/JS, no backend.
 
-🔗 Online version:  
+🔗 **Online version:**  
 https://spazma.github.io/emoji/
 
-📺 Features
-Favorites export/import (JSON)
+---
 
-Tag-based search
+## 📺 Features
 
-Unicode tester (codepoints, sequences, rendering check)
+- Favorites export/import (JSON)  
+- Tag-based search  
+- Unicode tester (codepoints, sequences, rendering check)  
+- Mobile mode (categories + emoji only)  
+- Checks once a month whether a new emoji database is available (updated by me)
 
-Mobile mode (categories + emoji only)
+---
 
-Checks once a month whether a new emoji database is available (updated by me)
+## 📚 Data sources
 
-📚 Data sources
-OpenMoji (CC BY-SA 4.0)
+- OpenMoji (CC BY-SA 4.0)  
+- Unicode CLDR annotations (Unicode License)
 
-Unicode CLDR annotations (Unicode License)
+---
 
-📝 License
-You can use the project however you want — just keep my nickname in the footer or README.
+## 📝 License
+
+You can use the project however you want — **just keep my nickname in the footer or README.**
